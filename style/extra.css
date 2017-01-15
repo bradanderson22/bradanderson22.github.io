@@ -34,6 +34,11 @@ h6 {
 
 /* About */
 
+.main-header {
+  padding: 3px;
+  margin: 40px 0 20px;
+}
+
 /* Padding */
 
 .seperation {
