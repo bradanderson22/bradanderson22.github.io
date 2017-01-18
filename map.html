@@ -16,18 +16,15 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 
-    <!-- Mapbox CSS-->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
-    <!-- Mapbox JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
-
-    <script src="script/vendor/map.js"></script>
-    <link href="style/map.css" rel="stylesheet"/>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 
     <!-- Bootstrap core CSS -->
     <link href="style/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="style/extra.css" rel="stylesheet">
+    <link href="style/map.css" rel="stylesheet">
+
     
     <body>
 
@@ -57,34 +54,28 @@
     </nav>
 
     <!-- ~~~~~~~~~**** MAP ****~~~~~~~~~ -->
-    <div id='map' style='width: 100%; height: 100%; position: absolute'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhZGFuZGVyc29uMjIiLCJhIjoiY2lzbnNiOWU3MDY0MjJ5cGJkNnNvY3RqbiJ9.2rU1d2BVtiPHcrSu8Pm3gw';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        center: [-77.1721962, 38.8809264],
-        zoom: 10,
-        style: 'mapbox://styles/mapbox/outdoors-v9'
-        });
 
-        // Get Coordinates
-        map.on('mousemove', function (e) {
-            document.getElementById('info').innerHTML =
-            // e.point is the x, y coordinates of the mousemove event relative
-            // to the top-left corner of the map
-            JSON.stringify(e.point) + '<br />' +
-                // e.lngLat is the longitude, latitude geographical position of the event
-            JSON.stringify(e.lngLat);
-         });
-        </script>
-    </div>
+    <div id="mapid"></div>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <script>
+
+    var mymap = L.map('mapid').setView([38.8816, -77.0910], 13);
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+
+
+    </script>
+    
     <!-- ~~~~~~~~~**** MAP ****~~~~~~~~~ -->
     
     <!-- jQuery -->
-    <!-- <script src="script/vendor/bootstrap/jquery.js"></script>
+    <script src="script/vendor/bootstrap/jquery.js"></script>
 
     <!-- javascript -->
-    <!-- <script src="script/vendor/bootstrap/bootstrap.min.js"></script> -->
+    <script src="script/vendor/bootstrap/bootstrap.min.js"></script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
