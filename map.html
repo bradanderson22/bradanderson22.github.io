@@ -11,9 +11,9 @@
 
     <title>Brad Anderson</title>
 
-    <!--Custom Icons -->
+    <!--font awesome icons -->
     <link href="style/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Fonts -->
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 
     <!-- leaflet -->
@@ -48,15 +48,14 @@
                     <li><a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <!-- ~~~~~~~~~**** MAP ****~~~~~~~~~ -->
+    <!-- map -->
 
     <div id="mapid"></div>
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="script/map_museums.js"></script>
 
     <script>
 
@@ -65,11 +64,12 @@
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mymap);
-
+    
+    L.geoJson(museums).addTo(mymap);
 
     </script>
     
-    <!-- ~~~~~~~~~**** MAP ****~~~~~~~~~ -->
+    <!-- /.map -->
     
     <!-- jQuery -->
     <script src="script/vendor/bootstrap/jquery.js"></script>
