@@ -23,65 +23,52 @@
     <!-- Custom CSS -->
     <link href="style/extra.css" rel="stylesheet">
     
-    <body data-spy="scroll" data-offset="0">
+    <body>
+    <div id="wrapper">
+        
+    <header>
+        <h1 class="page-header text-center">Brad Anderson</h1>
+        <div id="tag" class="text-center">
+            <p>GIS Engineer and Avid Outdoorsman in the D.C metropolitan area</p>
+        <div>
+    </header>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        
-        <!--Navbar Fluid -->
+    <nav>
         <div class="container">
-            
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Brad Anderson</a>
-            </div>
-
-            <!-- Navbar Collapse -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Portfolio</a></li>
+                <li role="presentation"><a href="#">Experience</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
         </div>
-        
     </nav>
+    
+    <br>
 
+    <content>
     <!-- About Me Content -->
     <section id="about">
-
         <div class="container">
-
             <!-- Page Heading -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Brad Anderson</h1>
+                    <p></p>
                 </div>
             </div>
-
             <!-- Image Header -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-3 img-portfolio">
                     <img class="img-responsive" src="images/profile.jpg" alt="">
                 </div>
-            </div>
-            
             <!--About Me -->
-            <div class="row about">
-                <div class="col-md-12">
-                    <h3>GIS Engineer in the D.C. Metropolitan Area</h3>
-                    <p>Hi, I'm Brad Anderson &#8212; a James Madison University graduate in Geographic Science.  
+                <div class="col-md-9 text-vcenter">
+                    <p>Hi, I'm Brad Anderson &#8212; welcome! I am a James Madison University graduate in Geographic Science.  
                         During my undergrad, my coursework focused around information systems with an emphasis in Geography.
                         My current position as a GIS Engineer has employed my foundation in GIS while refining my technological 
                         abilities.  Intelligence analysis, web development, data visualization are some other subjects I have showed interest 
-                        in and continue to evolve.
+                        and continue to evolve.
                 </div>
             </div>
         </div>
@@ -179,7 +166,8 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <!-- end wrapper -->
     </footer>
     <!-- End Contact Me Content / Footer -->
 
