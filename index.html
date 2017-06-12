@@ -16,7 +16,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
-
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="style/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -24,13 +26,15 @@
     <link href="style/extra.css" rel="stylesheet">
 
   </head>
+  
   <body>
     <div id="wrapper">
-        
+    
+    <!-- Header -->
     <header>
         <h1 class="page-header text-center">Brad Anderson</h1>
-        <div id="tag" class="text-center">
-            <p>GIS Engineer in the D.C metropolitan area</p>
+        <div class="text-center">
+            <h4 id="tag">GIS Engineer in the D.C metropolitan area</h4>
             <br>
         <div>
     </header>
@@ -39,139 +43,136 @@
     <nav>
         <div class="container">
             <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="#">About Me</a></li>
-                <li role="presentation"><a href="#">Portfolio</a></li>
-                <li role="presentation"><a href="#">Experience</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
+                <li class="active"><a href="#about" role="tab" data-toggle="tab">Home</a></li>
+                <li><a href="#portfolio" role="tab" data-toggle="tab">Portfolio</a></li>
+                <li><a href="#experience" role="tab" data-toggle="tab">Experience</a></li>
             </ul>
         </div>
     </nav>
     
-    <br>
+        <!-- Tab Content -->
+        <div class="container seperation">
+            <div class="tab-content">
+                
+                <!-- About Me -->
+                <div class="tab-pane active" id="about">
+                    <div class="row">
+                        <!-- Image -->
+                        <div class="col-md-3 img-portfolio">
+                            <img class="img-responsive" src="images/profile.jpg" alt="">
+                        </div>
+                        <!--Text -->
+                        <div class="col-md-9">
+                            <p>Hi! I'm Brad Anderson &#8212; a  James Madison University graduate in Geographic Science.  
+                                During my undergrad, my coursework focused around information systems with an emphasis in Geography.
+                                My current position as a GIS Engineer has employed my foundation in GIS while refining my technical
+                                abilities.  Intelligence analysis, web development, data visualization are some related subjects I have showed interest 
+                                and continue to evolve.</p>
+                            <p>Outside of my professional endeavors, I enjoy being active outdoors, playing competitive sports/games, and reading a good book.<br>
+                                Also, Dogs are easily the best companions although I do not current own a dog.</p>
+                            <h4>Contact me</h4>
+                            <p>Send me an <a href="mailto:brad.j.anderson22@gmail.com">email</a>, and I will respond as soon as possible. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio -->
+                <div class="tab-pane" id="portfolio">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="portfolio/cap_pres.pdf"> <img class="media-object" src="images/capstone.jpg"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Sea Level Rise Assessment</h4>
+                                <p>Sea-level rise (SLR) is widely discussed as a major consequence of global warming. This positive correlation is a major concern for 
+                                    communities close to the shoreline.  Various models allow local governments to predict and prepare for marine innundation.  The Sea Level Rise Viewer, 
+                                    developed by the NOAA Office for Coastal Management, is the model which we provide the most scrutiny and which variables were left unaccounted.</p>
+                                <p>Geospatial data collected from various sources allowed us to locate current coastal protection techniques and severity of erosion along the shore. 
+                                    Well-documented and dated archaeological sites were used as landmarks for determining stable land surfaces of the Holocene period. Old maps collected 
+                                    from the USGS and the Library of Virginia allowed us to visualize Saxis’ and Hunting Creek’s change in coastal geography over the last few hundred years.  
+                                    Field work on Hunting Creek was conducted to ground-truth the model and determined whether the predicted 1’ impacts are already evident.</p>
+                                <p>Read on if you are interested &#8212; the <a href="portfolio/cap_pres.pdf">presentation</a> and <a href="portfolio/cap_poster.pdf">poster</a> at your lesiure.</p>
+                        </div>
+                        <div class="media">
+                        <div class="media-left">
+                            <a href="modalman.com"> <img class="media-object" src="images/modalman.jpg"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Modal Man Website</h4>
+                                <p>This website can be defined as a brother's venture.  The three of us decided we wanted to brush up on our writing skills, but also stay "hip". 
+                                    The website started out rather sparse and intimidating, it grew into a quick resource to see some of the latest men's gear. I was invloved in assisting 
+                                    the website design and implmentation and initiated the advertising campaigns via social media.</p>
+                                <p>Samples of my writing can be found <a href="http://modalman.com/style/birddog-gym-shorts-herefords/">on the Birddogs post</a> and 
+                                <a href="http://modalman.com/lifestyle/poler-sandwich-maker/">who wouldn't love a campfire sandwich maker</a>. </p>
+                                <p>Read more at <a href="modalman.com">ModalMan.com</a>.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="map.html"> <img class="media-object" src="..."></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Experiment with Web GIS</h4>
+                                <p></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience -->
+                <div class="tab-pane container" id="experience">
+                    <div class="row">
+                        <!-- Job -->
+                        <div class="col-md-3">
+                            <h2>GIS Engineer</h2>
+                            <h5>Leidos formerly SAIC</h5>
+                            <p>May 2013 - Present</p>
+                        </div>
+                        <!--Description -->
+                        <div class="col-md-9">
+                            <p>I have worked for the GeoRover software team for almost 4 years. My responsibilities have varied, 
+                                but each task have revolved around improving the teams' procedures through automation, documentation, 
+                                and transparency.  We are a small team, so each one of us covers a lot of ground.</p>
+                            <p>My GIS and technical background has enabled me to develop use cases and detailed demostrations to customers, which I have presented at 
+                                tradeshows, conferences, and meetings.  Testing is another area in which I assist. Original test plans I built implmented an organized 
+                                testing phase in our software development lifecycle.</p>
+                            <p>Tracking customer purchases, identifying end-user requirements, reporting software bugs, and 
+                                troubleshooting technical issues are some of the tasks I handle on a weekly basis. The largest account 
+                                I manage orders, requirements, and bugs for is the National Geospatial-Intelligence Agency.  Most customer's which 
+                                purchase GeoRover products are government organizations, but I oversee with commerical business accounts as well.</p>
+                            
+                        </div>
+                    </div>
+                </div>
 
-    <content>
-    <!-- About Me Content -->
-    <section id="about">
-        <div class="container">
-            <!-- Page Heading -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <p></p>
-                </div>
-            </div>
-            <!-- Image Header -->
-            <div class="row">
-                <div class="col-md-3 img-portfolio">
-                    <img class="img-responsive" src="images/profile.jpg" alt="">
-                </div>
-            <!--About Me -->
-                <div class="col-md-9 text-vcenter">
-                    <p>Hi! I'm Brad Anderson &#8212; a James Madison University graduate in Geographic Science.  
-                        During my undergrad, my coursework focused around information systems with an emphasis in Geography.
-                        My current position as a GIS Engineer has employed my foundation in GIS while refining my technological 
-                        abilities.  Intelligence analysis, web development, data visualization are some other subjects I have showed interest 
-                        and continue to evolve.
-                </div>
             </div>
         </div>
 
-    </section>
-    <!-- End About Me Content -->
-
-    <!-- Portfolio Content -->
-    <section id="portfolio" class="seperation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Portfolio</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <!-- Modal Man Portfolio Item -->
-                    <a href="http://www.modalman.com" class="portfolio-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <p>Content Management with WordPress</p>
-                                <i class="fa fa-external-link fa-2x" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <img src="images/ModalMan_Portfolio1.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <!-- Capstone Portfolio Item -->
-                    <a href="portfolio\Capstone_Presentation.pdf" class="portfolio-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <p>Geospatial and Field Asseesment of Sea Level Rise</p>
-                                <i class="fa fa-file-powerpoint-o fa-2x" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <img src="images/Capstone_portfolio2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <!-- OpenStreetMaps Project -->
-                    <a href="map.html" class="portfolio-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <p>Interactive Map with Leaflet &amp; OpenStreetMaps<p>
-                                <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <img src="images/OpenStreetMaps_portfolio3.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- End Portfolio Content -->
-
-    <!-- Contact Me Content / Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-above">
+        <!--Footer -->
+        <footer>
+            <hr>
             <div class="container">
                 <div class="row">
-                    <!-- Social Accounts Sections-->
-                    <div class="footer-col col-md-6">
-                        <h3>Social</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.linkedin.com/in/brad-anderson-7ba6a862" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin fa-lg"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/bradanderson22" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
-                            </li>
-                        </ul>
+                    <div class="col-md-4">
+                        <p>Brad Anderson 2017</p>
                     </div>
+                    <div class="col-md-4">
 
-                    <!--Email Section -->
-                    <div class="footer-col col-md-6">
-                        <h3>Contact Me</h3>
-                        <p style="font-size: 18px">Didn't answer any of your questions?
-                            <br>Send me a 
-                            <a href="mailto:brad.j.anderson22@gmail.com" class="btn-social btn-outline">
-                            <i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/brad-anderson-7ba6a862" class="btn-social">
+                            <i class="fa fa-fw fa-linkedin fa-lg"></i></a>
+                        <!-- Github -->
+                        <a href="https://github.com/bradanderson22" class="btn-social">
+                            <i class="fa fa-github fa-lg"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Brad Anderson 2016
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
+
     </div>
     <!-- end wrapper -->
-    </footer>
-    <!-- End Contact Me Content / Footer -->
 
     <!-- jQuery -->
     <script src="script/vendor/bootstrap/jquery.js"></script>
@@ -186,9 +187,4 @@
   
     </body>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  </body>
 </html>
