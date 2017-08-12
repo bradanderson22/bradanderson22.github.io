@@ -3,19 +3,17 @@
   <head>   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; other head content must come *after* -->
     <meta name="description" content="Personal and Professional Webpage">
     <meta name="author" content="Brad Anderson">
-
-    <title>Brad Anderson</title>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/favicon.ico">
+    
+    <title>Brad Anderson</title>
+    
     <!-- Custom Icons -->
     <link href="style/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,36 +23,37 @@
 
     <!-- Bootstrap core CSS -->
     <link href="style/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="style/vendor/bootstrap/narrow-jumbotron.css" rel="stylesheet">
+    <!-- <link href="style/vendor/bootstrap/offcanvas.css" rel="stylesheet"> -->
     <!-- Custom CSS -->
     <link href="style/extra.css" rel="stylesheet">
 
   </head>
   
   <body>
-    <div id="wrapper">
     
-    <!-- Header -->
-    <header>
-        <h1 class="page-header text-center">Brad Anderson</h1>
-        <div class="text-center">
-            <h4 id="tag">GIS Engineer in the D.C metropolitan area</h4>
-            <br>
-        <div>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#about" role="tab" data-toggle="tab">About</a></li>
-                <li><a href="#portfolio"role="tab" data-toggle="tab">Portfolio</a></li>
-                <li><a href="#experience" role="tab" data-toggle="tab">Experience</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
     
-        
-        <div class="container seperation">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about" role="tab" data-toggle="tab">
+                  About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" role="tab" data-toggle="tab">
+                  Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" role="tab" data-toggle="tab">
+                  Experience</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Brad Anderson</h3>
+      </div>
+      
             <!-- Tab Content -->
             <div class="tab-content">
                 
@@ -62,58 +61,76 @@
                 <div class="tab-pane active" id="about">
                     <div class="row about-row">
                         <!-- Image -->
-                        <div class="col-md-3 img-portfolio">
-                            <img class="img-responsive" src="images/profile.jpg" alt="">
+                        <div class="col-md-3">
+                            <img class="img-fluid rounded" src="images/profile.jpg" alt="">
                         </div>
                         <!--Text -->
                         <div class="col-md-9">
-                            <h4>About me</h4>
+                            <h3>About me</h3>
                             <p>Hi! I'm Brad Anderson &#8212; a  James Madison University graduate in Geographic Science.  
                                 During my undergrad, my coursework focused around information systems with an emphasis in Geography.
                                 My current position as a GIS Engineer has employed my foundation in GIS while refining my technical
                                 abilities.  Geospatial analysis, web development, and data visualization are some related subjects I have showed interest 
                                 and continue to evolve.</p>
-                            <p>Outside of my professional endeavors, I enjoy being active outdoors, playing competitive sports/games, and reading a good book. <br>
-                            In general, I am an animal person, but I defintely gravitate towards dogs. I plan on getting a pup in the future to join my active lifestyle.</p>
+                            <p>Outside of my professional endeavors, I enjoy being active outdoors, playing competitive sports/games, and reading a good book.
+                            In general, <br> I am an animal person but defintely gravitate towards dogs.  I plan on getting a pup in the future to join my active lifestyle.</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio -->
                 <div class="tab-pane" id="portfolio">
-                    <!--Capstone Media -->
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="portfolio/cap_pres.pdf"> <img class="media-object" src="images/capstone.jpg"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Sea Level Rise Assessment</h4>
-                                <p>Sea-level rise (SLR) is widely discussed as a major consequence of global warming. This positive correlation is a major concern for 
-                                    communities close to the shoreline.  Various models allow local governments to predict and prepare for marine innundation, and the Sea Level Rise Viewer, 
-                                    developed by the NOAA Office for Coastal Management, is the model which we provide the most scrutiny and which variables were left unaccounted.</p>
-                                <p>Geospatial data collected from various sources allowed us to locate current coastal protection techniques and severity of erosion along the shore. 
-                                    Well-documented and dated archaeological sites were used as landmarks for determining stable land surfaces of the Holocene period. Old maps collected 
-                                    from the USGS and the Library of Virginia allowed us to visualize Saxis’ and Hunting Creek’s change in coastal geography over the last few hundred years.  
-                                    Field work on Hunting Creek was conducted to ground-truth the model and determined whether the predicted 1’ impacts are already evident.</p>
-                                <p>The <a href="portfolio/cap_pres.pdf">presentation</a> and <a href="portfolio/cap_poster.pdf">poster</a> at your lesiure.</p>
-                        </div>
+                    <!--Capstone -->
+                    <div class="row">
+                    <div class="col-md-3">
+                        <a href="portfolio/cap_pres.pdf"> <img class="img-fluid rounded" src="images/capstone.jpg"></a>
+                    </div><!--/span-->
+                    <div class="col-md-9">
+                        <h3>Sea Level Rise Assessment</h3>
+                        <p>Sea-level rise (SLR) is widely discussed as a major consequence of global warming. This positive correlation is a major concern for 
+                            communities close to the shoreline.  GIS models allow local governments to predict and prepare for marine innundation. The Sea Level Rise Viewer, 
+                            developed by the NOAA Office for Coastal Management, is the model which we scrutinized to find the variables left unaccounted.</p>
+                        <p>Geospatial data was collected from various sources: archaeological sites were used as landmarks for determining stable land surfaces of the Holocene period; old maps collected 
+                            from the USGS and the Library of Virginia allows us to visualize coastal geography over the last few hundred years;  
+                            and field work was conducted to ground-truth the model.</p>
+                        <p>The presentation is below, and the <a href="portfolio/cap_poster.pdf">poster</a> is at your lesiure.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View presentation &raquo;</a></p>
                     </div>
-                    <!--Modal Man Media -->
-                    <div class="media seperation">
-                        <div class="media-left">
-                            <a href="modalman.com"> <img class="media-object" src="images/modalman.jpg"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Modal Man Website</h4>
-                                <p>This website can be defined as a brother's venture.  The three of us decided we wanted to brush up on our writing skills, but also stay "hip". 
-                                    The website started out rather sparse and intimidating, it quickly grew into a resource to view the latest gear. I was invloved with
-                                    the design of the website, and to build our following, I developed and executed advertising campaigns via social media.</p>
-                                <p>Samples of my writing can be found <a href="http://modalman.com/style/birddog-gym-shorts-herefords/">on the Birddogs post</a> and 
-                                <a href="http://modalman.com/lifestyle/poler-sandwich-maker/">who wouldn't love a campfire sandwich maker</a>. </p>
-                                <p>Upgrade your man card at <a href="modalman.com">ModalMan.com</a>.</p>
-                        </div>
                     </div>
-                    <!-- Hiking Trails Tally  -->
+                    
+                    <hr>
+                    
+                    <!--Modal Man -->
+                    <div class="row">
+                    <div class="col-md-3">
+                        <a> <img class="img-fluid rounded" src="images/modalman.jpg"></a>
+                    </div><!--/span-->
+                    <div class="col-md-9">
+                        <h3>Modal Man Website</h3>
+                        <p>This website can be defined as a brother's venture.  The three of us decided we wanted to brush up on our writing skills and stay "hip". 
+                            The website started out rather sparse and intimidating, it quickly grew into a resource to view the latest gear. I was invloved with
+                            the design of the website, and to build our following, I developed and executed advertising campaigns via social media.</p>
+                        <p>Writing samples can be found <a href="http://modalman.com/style/birddog-gym-shorts-herefords/">on the Birddogs post</a> and 
+                        <a href="http://modalman.com/lifestyle/poler-sandwich-maker/">who wouldn't love a campfire sandwich maker</a>. </p>
+                        <p><a class="btn btn-secondary" href="modalman.com" role="button">Manliness is contagious &raquo;</a></p>
+                    </div>
+                    </div>
+                    
+                    <hr>
+
+                    <!--OSM and Leaflet -->
+                    <div class="row">
+                    <div class="col-md-3">
+                        <a> <img class="img-fluid rounded" src="images/osm.jpg"></a>
+                    </div><!--/span-->
+                    <div class="col-md-9">
+                        <h3>Leaflet API and OSM Tiles</h3>
+                        <p>This OpenStreetMap (OSM) and leaflet project is where I hope to build some javascript experience.  The map is a work in progress, but enjoy taking a look!</p>
+                        <p><a class="btn btn-secondary" href="map.html" role="button">View Map &raquo;</a></p>
+                    </div>
+                    </div>
+
+                    <!-- Hiking Trails Tally  
                     <div class="media">
                         <div class="media-left">
                             <a href="images/hikingmap_lg.png"> <img class="media-object" src="images/hikingmap.jpg"></a>
@@ -123,7 +140,8 @@
                             <p>I wanted to delved further into experimenting with web GIS platforms, it was only natural to show one of my favorite activities, hiking.
                                 Leveraging CARTO as the platform, I built this map to tally the trails I travel, it just a start as there are many more trails to be included and traveled.</p>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Open Trail Map</button>
-                            <!--Modal Window -->
+
+                            <!-- Modal Window 
                             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
@@ -132,7 +150,7 @@
                                             <h4 class="modal-title" id="myModalLabel">Hiking Trails Tally</h4>
                                         </div>
                                         <div class="text-center">
-                                            <!-- CARTO MAP-->
+                                            <!-- CARTO MAP
                                             <iframe width="95%" height="600" frameborder="0" 
                                             src="https://bradanderson22.carto.com/builder/300eb96e-e1de-11e6-91f2-0ecd1babdde5/embed"></iframe>
                                             <hr>
@@ -140,28 +158,18 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                    </div>
-                    <!--OSM and Leaflet -->
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="map.html"> <img class="media-object" src="images/osm.jpg"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">OSM and Leaflet</h4>
-                            <p>This OpenStreetMap (OSM) and leaflet project is where I hope to build some javascript experience.  The map is a work in progress, but enjoy taking a look!</p>
-                            <a class="btn btn-primary" href="map.html">View Map</a>
-                        </div>
-                    </div>
+                    </div -->
                 </div>
 
                 <!-- Experience -->
-                <div class="tab-pane container" id="experience">
+                <div class="tab-pane" id="experience">
                     <div class="row">
                         <!-- GIS Engineer -->
                         <div class="col-md-3">
-                            <h3>GIS Engineer</h3>
-                            <h5>Leidos</h5>
+                            <h4>GIS Engineer</h4>
+                            <h6>Leidos</h6>
                             <p>May 2013 - Present</p>
                         </div>
                         <!--Description -->
@@ -179,11 +187,12 @@
                             each product release and minimizing oversight.  A procedure document was produced to outline the steps completed by each team member.</p>
                         </div>
                     </div>
-                    <div class="row seperation">
+                    <hr>
+                    <div class="row">
                         <!-- Contract Employment -->
                         <div class="col-md-3">
-                            <h3>GIS Specialist</h3>
-                            <h5>Virginia Dept. of Historic Resources</h5>
+                            <h4>GIS Specialist</h4>
+                            <h6>Virginia Dept. of Historic Resources</h6>
                             <p>January 2014 (Contract Employment)</p>
                         </div>
                         <!--Description -->
@@ -225,10 +234,8 @@
                 </div>
             </div>
         </footer>
-
-    </div>
-    <!-- end wrapper -->
-
+    
+    <div class="container">
     <!-- javascript -->
     <script src="script/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="script/vendor/extra.js"></script>
