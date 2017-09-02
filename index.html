@@ -17,7 +17,6 @@
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="script/extra.js"></script>
     <!-- jQuery -->
     <script src="script/vendor/bootstrap/jquery.js"></script>
 
@@ -34,208 +33,200 @@
     
     <div class="container">
     
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills float-right">
+        <div class="header">
+            <ul class="nav nav-pills float-right" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="#about" role="tab" data-toggle="tab">
-                  About<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" data-toggle="tab" href="#about" role="tab">
+                    About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio" role="tab" data-toggle="tab">
-                  Portfolio</a>
+                <a class="nav-link" data-toggle="tab" href="#portfolio" role="tab" >
+                    Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience" role="tab" data-toggle="tab">
-                  Experience</a>
+                <a class="nav-link" data-toggle="tab" href="#experience" role="tab">
+                    Experience</a>
             </li>
-          </ul>
-        </nav>
-        <h2 class="text-primary">Brad Anderson</h2>
-      </div>
+            </ul>
+        <h2 class="text-primary display-4">Brad Anderson</h2>
+        </div>
       
-            <!-- Tab Content -->
-            <div class="tab-content">
-                
-                <!-- About Me -->
-                <div class="tab-pane active" id="about">
-                    <div class="row about-row">
-                        <!-- Image -->
-                        <div class="col-md-3">
-                            <img class="img-fluid rounded" src="images/profile.jpg" alt="">
-                        </div>
-                        <!--Text -->
-                        <div class="col-md-9">
-                            <h3>About me</h3>
-                            <p>Hi! I'm Brad Anderson &#8212; a  James Madison University graduate in Geographic Science.  
-                                During my undergrad, my coursework focused around information systems with an emphasis in Geography.
-                                My current position as a GIS Engineer has employed my foundation in GIS while refining my technical
-                                abilities.  Geospatial analysis, web development, and data visualization are some related subjects I have showed interest 
-                                and continue to evolve.</p>
-                            <p>Outside of my professional endeavors, I enjoy being active outdoors, playing competitive sports/games, and reading a good book.
-                            In general, <br> I am an animal person but defintely gravitate towards dogs.  I plan on getting a pup in the future to join my active lifestyle.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio -->
-                <div class="tab-pane" id="portfolio">
-                    <!--Capstone -->
-                    <div class="row">
+        <!-- Tab Content -->
+        <div class="tab-content">
+            
+            <!-- About Me -->
+            <div class="tab-pane active" id="about" role="tabpanel">
+                <div class="row about-row">
+                    <!-- Image -->
                     <div class="col-md-3">
-                        <a href="portfolio/cap_pres.pdf"> <img class="img-fluid rounded" src="images/capstone.jpg"></a>
-                    </div><!--/span-->
+                        <img class="img-fluid rounded" src="images/profile.jpg" alt="">
+                    </div>
+                    <!--Text -->
                     <div class="col-md-9">
-                        <h4>Sea Level Rise Assessment</h4>
-                        <p>Sea-level rise (SLR) is widely discussed as a major consequence of global warming. This positive correlation is a major concern for 
-                            communities close to the shoreline.  GIS models allow local governments to predict and prepare for marine innundation. The Sea Level Rise Viewer, 
-                            developed by the NOAA Office for Coastal Management, is the model which we scrutinized to find the variables left unaccounted.</p>
-                        <p>Geospatial data was collected from various sources: archaeological sites were used as landmarks for determining stable land surfaces of the Holocene period; old maps collected 
-                            from the USGS and the Library of Virginia allows us to visualize coastal geography over the last few hundred years;  
-                            and field work was conducted to ground-truth the model.</p>
-                        <p>The presentation is below, and the <a href="portfolio/cap_poster.pdf">poster</a> is at your lesiure.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">View presentation &raquo;</a></p>
-                    </div>
-                    </div>
-                    
-                    <hr>
-                    
-                    <!--Modal Man -->
-                    <div class="row">
-                    <div class="col-md-3">
-                        <a> <img class="img-fluid rounded" src="images/modalman.jpg"></a>
-                    </div><!--/span-->
-                    <div class="col-md-9">
-                        <h4>Modal Man Website</h4>
-                        <p>This website can be defined as a brother's venture.  The three of us decided we wanted to brush up on our writing skills and stay "hip". 
-                            The website started out rather sparse and intimidating, it quickly grew into a resource to view the latest gear. I was invloved with
-                            the design of the website and executed advertising campaigns via social media.</p>
-                        <p>Writing samples can be found <a href="http://modalman.com/style/birddog-gym-shorts-herefords/">on the Birddogs post</a> and 
-                        <a href="http://modalman.com/lifestyle/poler-sandwich-maker/">who wouldn't love a campfire sandwich maker</a>. </p>
-                        <p><a class="btn btn-secondary" href="modalman.com" role="button">Manliness is contagious &raquo;</a></p>
-                    </div>
-                    </div>
-                    
-                    <hr>
-
-                    <!--OSM and Leaflet -->
-                    <div class="row">
-                    <div class="col-md-3">
-                        <a> <img class="img-fluid rounded" src="images/osm.jpg"></a>
-                    </div><!--/span-->
-                    <div class="col-md-9">
-                        <h4>Leaflet API and OSM Tiles</h4>
-                        <p>This OpenStreetMap (OSM) and leaflet project is where I hope to build some javascript experience.  The map is a work in progress, but enjoy taking a look!</p>
-                        <p><a class="btn btn-secondary" href="map.html" role="button">View Map &raquo;</a></p>
-                    </div>
-                    </div>
-
-                    <!-- Hiking Trails Tally  
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="images/hikingmap_lg.png"> <img class="media-object" src="images/hikingmap.jpg"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Hiking Trails Tally</h4>
-                            <p>I wanted to delved further into experimenting with web GIS platforms, it was only natural to show one of my favorite activities, hiking.
-                                Leveraging CARTO as the platform, I built this map to tally the trails I travel, it just a start as there are many more trails to be included and traveled.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Open Trail Map</button>
-
-                            <!-- Modal Window 
-                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Hiking Trails Tally</h4>
-                                        </div>
-                                        <div class="text-center">
-                                            <!-- CARTO MAP
-                                            <iframe width="95%" height="600" frameborder="0" 
-                                            src="https://bradanderson22.carto.com/builder/300eb96e-e1de-11e6-91f2-0ecd1babdde5/embed"></iframe>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div -->
-                </div>
-
-                <!-- Experience -->
-                <div class="tab-pane" id="experience">
-                    <div class="row">
-                        <!-- GIS Engineer -->
-                        <div class="col-md-3">
-                            <h4>GIS Engineer</h4>
-                            <h6>Leidos</h6>
-                            <p>May 2013 - Present</p>
-                        </div>
-                        <!--Description -->
-                        <div class="col-md-9">
-                            <p>I have worked for the GeoRover software team for almost 4 years taking on various responsibilities, and
-                                due to the size of the team, each member covers a lot of ground.</p>
-                            <p><strong>Responsibilities:</strong> My GIS and technical background has enabled me to assist the development team with product development and software testing.  
-                                Knowledge of geospatial software and geographic concepts contributed to establishing a more comprensive testing phase, which
-                                was one of my first projects with the team. I developed unit tests for our installer to alleviate some of the testing workload.
-                                Now the testing phase contributes to the release of a more refined product to our customers.  My responsiblity with customers where identifying end-user 
-                                requirements, troubleshooting technical issues, and improving customer relations. I manage many customers of varying size, but my largest account is National 
-                                Geospatial-Intelligence Agency.</p>
-                            <p><strong>Accomplishments:</strong> I received an award for "exceptional contribution, dedication, and support to teamwork and collaboration".  
-                            My unique role supporting development and customers lead to being appointed Release Manager by the team.  Supplemental responsiblities were overseeing 
-                            each product release and minimizing oversight.  A procedure document was produced to outline the steps completed by each team member.</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <!-- Contract Employment -->
-                        <div class="col-md-3">
-                            <h4>GIS Specialist</h4>
-                            <h6>Virginia Dept. of Historic Resources</h6>
-                            <p>January 2014 (Contract Employment)</p>
-                        </div>
-                        <!--Description -->
-                        <div class="col-md-9">
-                            <p><strong>Summary: </strong>Dr. Michael Barber, the State Archaeologist for the Virginia Department of Historic Resources, was applying for a 
-                                state grant to preserve Werowocomoco.  This archaeological site is <a href="https://www.google.com/maps/place/Werowocomoco/@37.4096758,-76.65748,17z/data=!3m1!4b1!4m5!3m4!1s0x89b0906d2c6c95cf:0xc9dfbaf3945d33ff!8m2!3d37.4096758!4d-76.655286">
-                                located along the York River alongside Purtan Bay</a>.  This location was the primary village of Paramount Chief Powhatan. Excavations have demonstrated that the 
-                                site was occupied from AD 1400 and that the village was divided by landscape manipulation into secular and sacred areas. </p>
-                                <p><strong>Responsibility: </strong>Publicly available satellite imagery, historic topographic maps, and geospatial data provided essential information to assess the amount of 
-                                landform change that occured. Geospatial techniques (georeferencing and GPS field assessment) were performed to illustrate and map the coastal morpholgy change.
-                                A geomorpholgy report on these measurements helped outline a case for funding the preservation of this histroical site.</p>
-                        </div>
+                        <h3>About me</h3>
+                        <p>Hi! I'm Brad Anderson &#8212; a  James Madison University graduate in Geographic Science.  
+                            During my undergrad, my coursework focused around information systems with an emphasis in Geography.
+                            My current position as a GIS Engineer has employed my foundation in GIS while refining my technical
+                            abilities.  Geospatial analysis, web development, and data visualization are some related subjects I have showed interest 
+                            and continue to evolve.</p>
+                        <p>Outside of my professional endeavors, I enjoy being active outdoors, playing competitive sports/games, and reading a good book.
+                        In general, <br> I am an animal person but defintely gravitate towards dogs.  I plan on getting a pup in the future to join my active lifestyle.</p>
                     </div>
                 </div>
             </div>
             
+            <!-- Portfolio -->
+            <div class="tab-pane" id="portfolio" role="tabpanel">
+                <!--Capstone -->
+                <div class="row">
+                <div class="col-md-3">
+                    <a href="portfolio/cap_pres.pdf"> <img class="img-fluid rounded" src="images/capstone.jpg"></a>
+                </div><!--/span-->
+                <div class="col-md-9">
+                    <h4>Sea Level Rise Assessment</h4>
+                    <p>Sea-level rise (SLR) is widely discussed as a major consequence of global warming. This positive correlation is a major concern for 
+                        communities close to the shoreline.  GIS models allow local governments to predict and prepare for marine innundation. The Sea Level Rise Viewer, 
+                        developed by the NOAA Office for Coastal Management, is the model which we scrutinized to find the variables left unaccounted.</p>
+                    <p>Geospatial data was collected from various sources: archaeological sites were used as landmarks for determining stable land surfaces of the Holocene period; old maps collected 
+                        from the USGS and the Library of Virginia allows us to visualize coastal geography over the last few hundred years;  
+                        and field work was conducted to ground-truth the model.</p>
+                    <p>The presentation is below, and the <a href="portfolio/cap_poster.pdf">poster</a> is at your lesiure.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View presentation &raquo;</a></p>
+                </div>
+                </div>
                 
                 <hr>
                 
-                <!--Footer -->
-
+                <!--Modal Man -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <p class="text-muted">Brad Anderson 2017</p>
+                <div class="col-md-3">
+                    <a> <img class="img-fluid rounded" src="images/modalman.jpg"></a>
+                </div><!--/span-->
+                <div class="col-md-9">
+                    <h4>Modal Man Website</h4>
+                    <p>This website can be defined as a brother's venture.  The three of us decided we wanted to brush up on our writing skills and stay "hip". 
+                        The website started out rather sparse and intimidating, it quickly grew into a resource to view the latest gear. I was invloved with
+                        the design of the website and executed advertising campaigns via social media.</p>
+                    <p>Writing samples can be found <a href="http://modalman.com/style/birddog-gym-shorts-herefords/">on the Birddogs post</a> and 
+                    <a href="http://modalman.com/lifestyle/poler-sandwich-maker/">who wouldn't love a campfire sandwich maker</a>. </p>
+                    <p><a class="btn btn-secondary" href="modalman.com" role="button">Manliness is contagious &raquo;</a></p>
+                </div>
+                </div>
+                
+                <hr>
+
+                <!--OSM and Leaflet -->
+                <div class="row">
+                <div class="col-md-3">
+                    <a> <img class="img-fluid rounded" src="images/osm.jpg"></a>
+                </div><!--/span-->
+                <div class="col-md-9">
+                    <h4>Leaflet API and OSM Tiles</h4>
+                    <p>This OpenStreetMap (OSM) and leaflet project is where I hope to build some javascript experience.  The map is a work in progress, but enjoy taking a look!</p>
+                    <p><a class="btn btn-secondary" href="map.html" role="button">View Map &raquo;</a></p>
+                </div>
+                </div>
+
+                <!-- Hiking Trails Tally  
+                <div class="media">
+                    <div class="media-left">
+                        <a href="images/hikingmap_lg.png"> <img class="media-object" src="images/hikingmap.jpg"></a>
                     </div>
-                    <div class="col-md-9 text-right">
-                        <!--Email-->
-                        <a href="mailto:brad.j.anderson22@gmail.com?Subject=Personal%20Website%20Contact" class="btn-social">
-                            <i class="fa fa-envelope"></i></i></a>
-                        <!--LinkedIn -->
-                        <a href="https://www.linkedin.com/in/brad-anderson-7ba6a862" class="btn-social">
-                            <i class="fa fa-fw fa-linkedin fa-lg"></i></a>
-                        <!--Github -->
-                        <a href="https://github.com/bradanderson22" class="btn-social">
-                            <i class="fa fa-github fa-lg"></i></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Hiking Trails Tally</h4>
+                        <p>I wanted to delved further into experimenting with web GIS platforms, it was only natural to show one of my favorite activities, hiking.
+                            Leveraging CARTO as the platform, I built this map to tally the trails I travel, it just a start as there are many more trails to be included and traveled.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Open Trail Map</button>
+
+                        <!-- Modal Window 
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Hiking Trails Tally</h4>
+                                    </div>
+                                    <div class="text-center">
+                                        <!-- CARTO MAP
+                                        <iframe width="95%" height="600" frameborder="0" 
+                                        src="https://bradanderson22.carto.com/builder/300eb96e-e1de-11e6-91f2-0ecd1babdde5/embed"></iframe>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div -->
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-pane" id="experience" role="tabpanel">
+                <div class="row">
+                    <!-- GIS Engineer -->
+                    <div class="col-md-3">
+                        <h4>GIS Engineer</h4>
+                        <h6>Leidos</h6>
+                        <p>May 2013 - Present</p>
+                    </div>
+                    <!--Description -->
+                    <div class="col-md-9">
+                        <p>I have worked for the GeoRover software team for almost 4 years taking on various responsibilities, and
+                            due to the size of the team, each member covers a lot of ground.</p>
+                        <p><strong>Responsibilities:</strong> My GIS and technical background has enabled me to assist the development team with product development and software testing.  
+                            Knowledge of geospatial software and geographic concepts contributed to establishing a more comprensive testing phase, which
+                            was one of my first projects with the team. I developed unit tests for our installer to alleviate some of the testing workload.
+                            Now the testing phase contributes to the release of a more refined product to our customers.  My responsiblity with customers where identifying end-user 
+                            requirements, troubleshooting technical issues, and improving customer relations. I manage many customers of varying size, but my largest account is National 
+                            Geospatial-Intelligence Agency.</p>
+                        <p><strong>Accomplishments:</strong> I received an award for "exceptional contribution, dedication, and support to teamwork and collaboration".  
+                        My unique role supporting development and customers lead to being appointed Release Manager by the team.  Supplemental responsiblities were overseeing 
+                        each product release and minimizing oversight.  A procedure document was produced to outline the steps completed by each team member.</p>
                     </div>
                 </div>
+                <hr>
+                <div class="row">
+                    <!-- Contract Employment -->
+                    <div class="col-md-3">
+                        <h4>GIS Specialist</h4>
+                        <h6>Virginia Dept. of Historic Resources</h6>
+                        <p>January 2014 (Contract Employment)</p>
+                    </div>
+                    <!--Description -->
+                    <div class="col-md-9">
+                        <p><strong>Summary:</strong> Dr. Michael Barber, the State Archaeologist for the Virginia Department of Historic Resources, was applying for a 
+                            state grant to preserve Werowocomoco.  This archaeological site is <a href="https://www.google.com/maps/place/Werowocomoco/@37.4096758,-76.65748,17z/data=!3m1!4b1!4m5!3m4!1s0x89b0906d2c6c95cf:0xc9dfbaf3945d33ff!8m2!3d37.4096758!4d-76.655286">
+                            located along the York River alongside Purtan Bay</a>.  This location was the primary village of Paramount Chief Powhatan. Excavations have demonstrated that the 
+                            site was occupied from AD 1400 and that the village was divided by landscape manipulation into secular and sacred areas.</p>
+                            <p><strong>Responsibility:</strong> Publicly available satellite imagery, historic topographic maps, and geospatial data provided essential information to assess the amount of 
+                            landform change that occured. Geospatial techniques (georeferencing and GPS field assessment) were performed to illustrate and map the coastal morpholgy change.
+                            A geomorpholgy report on these measurements helped outline a case for funding the preservation of this histroical site.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-    <!-- javascript -->
-    <script src="script/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="script/vendor/extra.js"></script>
-    
+        
+            <hr>
+
+            <!--Footer -->
+
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="text-muted">Brad Anderson 2017</p>
+                </div>
+                <div class="col-md-9 text-right">
+                    <!--Email-->
+                    <a href="mailto:brad.j.anderson22@gmail.com?Subject=Personal%20Website%20Contact" class="btn-social">
+                        <i class="fa fa-envelope"></i></i></a>
+                    <!--LinkedIn -->
+                    <a href="https://www.linkedin.com/in/brad-anderson-7ba6a862" class="btn-social">
+                        <i class="fa fa-fw fa-linkedin fa-lg"></i></a>
+                    <!--Github -->
+                    <a href="https://github.com/bradanderson22" class="btn-social">
+                        <i class="fa fa-github fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
