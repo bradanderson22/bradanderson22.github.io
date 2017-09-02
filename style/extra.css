@@ -13,17 +13,6 @@ body {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /* text-transform: uppercase; */
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-
 /* Body */
 
 /*Header*/
@@ -67,5 +56,5 @@ h6 {
 .btn-social:focus,
 .btn-social:active,
 .btn-social.active {
-    color: #337ab7;
+    color: #007bff;
 }
